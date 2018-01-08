@@ -1,10 +1,3 @@
-$(function(){
-    $('.chocolat-parent').Chocolat({
-      loop           : true,
-      imageSize     : 'contain',
-      overlayOpacity : 0.9
-    });
-});
 (function (factory) {
     if(typeof module === "object" && typeof module.exports === "object") {
         module.exports = factory(require("jquery"), window, document);
@@ -472,14 +465,6 @@ $(function(){
                     }
                 }
             });
-            // this.elems.wrapper.find('.chocolat-img')
-            //     .off('click.chocolat')
-            //     .on('click.chocolat', function(e) {
-            //         var currentImage = that.settings.images[that.settings.currentImage];
-            //         if(currentImage.width > $(that.elems.wrapper).width() || currentImage.height > $(that.elems.wrapper).height() ){
-            //             that.toggleZoom(e);
-            //         }
-            // });
 
             this.elems.wrapper.find('.chocolat-right')
                 .off('click.chocolat')
