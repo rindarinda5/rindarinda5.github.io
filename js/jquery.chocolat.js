@@ -1,3 +1,10 @@
+$(function(){
+    $('.chocolat-parent').Chocolat({
+      loop           : true,
+      imageSize     : 'contain',
+      overlayOpacity : 0.9
+    });
+});
 (function (factory) {
     if(typeof module === "object" && typeof module.exports === "object") {
         module.exports = factory(require("jquery"), window, document);
