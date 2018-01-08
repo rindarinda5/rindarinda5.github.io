@@ -1,0 +1,289 @@
+html {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 1280px;
+  margin: 0 auto;
+  padding: 124px 104px 0;
+}
+
+@media (max-width: 767px) {
+  header {
+    display: block;
+    width: 100%;
+    padding: 100px 18px 0;
+  }
+}
+
+header .top-contents {
+  display: flex;
+}
+
+header .top-contents .title h1 {
+  font-size: 2.4rem;
+  letter-spacing: 4px;
+}
+
+@media (max-width: 767px) {
+  header .top-contents .title h1 {
+    font-size: 1.6rem;
+  }
+}
+
+header .top-contents .title h1 a {
+  text-decoration: none;
+  color: #333333;
+}
+
+header .top-contents .title h2 {
+  margin-top: 4px;
+  font-size: 1.4rem;
+  font-weight: 300;
+  letter-spacing: 2.2px;
+}
+
+@media (max-width: 767px) {
+  header .top-contents .title h2 {
+    font-size: 1.1rem;
+  }
+}
+
+header ul {
+  display: flex;
+  margin-left: auto;
+  list-style: none;
+  font-size: 1.4rem;
+}
+
+@media (max-width: 767px) {
+  header ul {
+    display: none;
+  }
+}
+
+header ul li + li {
+  margin-left: 54px;
+}
+
+@media (max-width: 767px) {
+  header ul li + li {
+    margin-left: 0;
+  }
+}
+
+header ul li a {
+  text-decoration: none;
+  color: #000000;
+  letter-spacing: 2.2px;
+}
+
+header .menu ul {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  header .menu ul {
+    display: table-cell;
+  }
+}
+
+.main-contents {
+  width: 1280px;
+  margin: 0 auto;
+  padding: 124px 104px 0;
+}
+
+@media (max-width: 767px) {
+  .main-contents {
+    width: 100%;
+    margin-top: 70px;
+    padding: 0 18px;
+  }
+}
+
+.main-contents li {
+  display: inline-block;
+  justify-content: space-between;
+  width: 355px;
+  height: 280px;
+  background-color: #2c2c2c;
+  list-style: none;
+}
+
+@media (max-width: 767px) {
+  .main-contents li {
+    width: 100%;
+  }
+}
+
+.main-contents li img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 767px) {
+  .main-contents li + li {
+    margin-top: 10px;
+  }
+}
+
+.main-contents h3 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  letter-spacing: 2.2px;
+}
+
+.main-contents h3 span {
+  font-size: 1.4rem;
+}
+
+.main-contents h3 span::before {
+  content: "/";
+  margin: 0 16px;
+  color: #333;
+}
+
+.main-contents .history {
+  margin-top: 32px;
+}
+
+.main-contents .history p {
+  font-size: 1.4rem;
+  letter-spacing: 2.2px;
+}
+
+.main-contents .history p span {
+  margin-right: 16px;
+}
+
+.main-contents .history p + p {
+  margin-top: 16px;
+}
+
+.contact {
+  display: flex;
+  width: 1280px;
+  margin: 80px auto;
+  padding: 0 104px;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 767px) {
+  .contact {
+    width: 100%;
+    margin-top: 48px;
+    padding: 0 18px;
+  }
+}
+
+.contact span {
+  display: block;
+  letter-spacing: 2.2px;
+}
+
+.contact a {
+  display: inline-block;
+  margin-top: 8px;
+  color: #9F9F9F;
+}
+
+@media (max-width: 767px) {
+  .contact a {
+    margin-top: 4px;
+  }
+}
+
+.contact .mail {
+  margin-left: 72px;
+}
+
+@media (max-width: 767px) {
+  .contact .mail {
+    margin-left: 32px;
+  }
+}
+
+.is-active {
+  height: 100vh;
+  background-color: #333;
+}
+
+
+/* ぐろなび */
+@media (max-width: 767px) {
+  .menu-btn {
+    display: inline-block;
+    margin-left: auto;
+    text-decoration: none;
+    color: #333333;
+    font-size: 1.2rem;
+    letter-spacing: 1.2px;
+    z-index: 1;
+  }
+
+  .menu-btn span {
+      color: #333333;
+  }
+
+  .menu-btn span:after {
+      content: attr(data-txt-menu);
+  }
+
+  /* 開閉用ボタンがクリックされた時のスタイル */
+  .open .menu-btn span:after {
+      content: attr(data-txt-close);
+      color: #fff;
+  }
+
+  .menu {
+    position: fixed;
+    display: table;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.8);
+    -webkit-transition: all .5s;
+    transition: all .5s;
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  .menu ul {
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  .menu li {
+    width: 300px;
+    height: 80px;
+    line-height: 80px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .menu li a {
+    display: block;
+    font-size: 18px;
+    color: #fff;
+  }
+
+  .menu li a:hover {
+    color: #999;
+  }
+
+  .open .menu {
+    -webkit-transition: all .5s;
+    transition: all .5s;
+    visibility: visible;
+    opacity: 1;
+  }
+}
