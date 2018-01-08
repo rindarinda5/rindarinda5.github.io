@@ -105,7 +105,7 @@ header .menu ul {
 @media (max-width: 767px) {
   .main-contents {
     width: 100%;
-    margin-top: 70px;
+    margin-top: 60px;
     padding: 0 18px;
   }
 }
@@ -288,14 +288,14 @@ header .menu ul {
 
 #pageTop a {
   display: block;
-  width: 46px;
-  height: 46px;
+  width: 40px;
+  height: 40px;
   background-color: #333333;
-  opacity: 0.3;
+  opacity: 0.5;
   z-index: 999;
   border-radius: 30px;
   color: #fff;
-  font-size: 27px;
+  font-size: 24px;
   text-decoration: none;
   text-align: center;
 }
@@ -303,4 +303,23 @@ header .menu ul {
 #pageTop a:hover {
   text-decoration: none;
   opacity: 0.7;
+}
+
+footer {
+  width: 1280px;
+  margin: 0 auto;
+  padding: 30px 104px;
+}
+
+@media (max-width: 767px) {
+  footer {
+    display: block;
+    width: 100%;
+    padding: 24px 18px 40px;
+  }
+}
+
+footer small {
+  font-family: arial narrow, sans-serif;
+  letter-spacing: 1.8px;
 }
