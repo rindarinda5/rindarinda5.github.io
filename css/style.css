@@ -174,7 +174,6 @@ header .menu ul {
 }
 
 .contact {
-  /* display: flex; */
   width: 1280px;
   margin: 42px auto;
   padding: 0 104px;
@@ -185,7 +184,6 @@ header .menu ul {
 @media (max-width: 767px) {
   .contact {
     width: 100%;
-    /* margin-top: 42px; */
     padding: 0 18px;
   }
 }
@@ -210,8 +208,6 @@ header .menu ul {
   background-color: #333;
 }
 
-
-/* ぐろなび */
 @media (max-width: 767px) {
   .menu-btn {
     display: inline-block;
@@ -282,4 +278,29 @@ header .menu ul {
     visibility: visible;
     opacity: 1;
   }
+}
+
+#pageTop {
+  position: fixed;
+  bottom: 4%;
+  right: 5%;
+}
+
+#pageTop a {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-color: #333333;
+  opacity: 0.5;
+  z-index: 999;
+  border-radius: 30px;
+  color: #fff;
+  font-size: 24px;
+  text-decoration: none;
+  text-align: center;
+}
+
+#pageTop a:hover {
+  text-decoration: none;
+  opacity: 0.7;
 }
