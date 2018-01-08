@@ -275,7 +275,7 @@ header .menu ul {
   }
 
   .menu li a {
-    display: block;
+    display: inline-block;
     font-size: 18px;
     color: #fff;
   }
