@@ -156,12 +156,12 @@ header .menu ul {
 }
 
 .main-contents .history {
-  margin-top: 32px;
+  margin-top: 42px;
 }
 
 .main-contents .history p {
   font-size: 1.4rem;
-  font-family: "游ゴシック","Yu Gothic","游ゴシック体",YuGothic;
+  font-family: YuGothic;
   letter-spacing: 2.2px;
 }
 
@@ -174,9 +174,9 @@ header .menu ul {
 }
 
 .contact {
-  display: flex;
+  /* display: flex; */
   width: 1280px;
-  margin: 80px auto;
+  margin: 42px auto;
   padding: 0 104px;
   font-size: 1.2rem;
   font-family: arial, sans-serif;
@@ -185,36 +185,24 @@ header .menu ul {
 @media (max-width: 767px) {
   .contact {
     width: 100%;
-    margin-top: 48px;
+    /* margin-top: 42px; */
     padding: 0 18px;
   }
 }
 
 .contact span {
-  display: block;
+  display: inline-block;
   letter-spacing: 2.2px;
 }
 
 .contact a {
   display: inline-block;
-  margin-top: 8px;
   color: #9F9F9F;
-}
-
-@media (max-width: 767px) {
-  .contact a {
-    margin-top: 4px;
-  }
+  font-size: 1.4rem;
 }
 
 .contact .mail {
-  margin-left: 72px;
-}
-
-@media (max-width: 767px) {
-  .contact .mail {
-    margin-left: 32px;
-  }
+  margin-top: 10px;
 }
 
 .is-active {
@@ -245,7 +233,6 @@ header .menu ul {
       content: attr(data-txt-menu);
   }
 
-  /* 開閉用ボタンがクリックされた時のスタイル */
   .open .menu-btn span:after {
       content: attr(data-txt-close);
       color: #fff;
