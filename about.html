@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/chocolat.css" type="text/css" media="screen" charset="utf-8">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="js/jquery.chocolat.js"></script>
+    <script>
+        $(function(){
+            $('.chocolat-parent').Chocolat({
+                loop           : true,
+                imageSize     : 'contain',
+                overlayOpacity : 0.9
+            });
+        });
+    </script>
+  </head>
+  <body>
+    <header>
+      <div class="top-contents">
+        <div class="title">
+          <h1><a href="index.html">YUSUKE SANO</a></h1>
+          <h2>PHOTOGRAPHER</h2>
+        </div>
+        <ul>
+          <li><a href="#">WORKS</a></li>
+          <li><a href="about.html">PROFILE</a></li>
+          <li><a href="mailto:snys1123@gmail.com">CONTACT</a></li>
+        </ul>
+        <div class="menu-btn" id="js__btn" href="#">
+          <span data-txt-menu="MENU" data-txt-close="CLOSE"></span>
+        </div>
+        <nav class="menu" id="js__nav">
+          <ul>
+            <li><a href="index.html">WORKS</a></li>
+            <li><a href="about.html">PROFILE</a></li>
+            <li><a href="mailto:snys1123@gmail.com">CONTACT</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="main-contents">
+      <h3>佐野 優典<span>YUSUKE SANO</span></h3>
+      <div class="history">
+        <p><span>1990</span>兵庫県明石市生まれ</p>
+        <p><span>2015</span>代官山スタジオ入社</p>
+        <p><span>2017</span>独立</p>
+      </div>
+    </div>
+    <div class="contact">
+      <div class="sns">
+        <span>SNS</span>
+        <a href="https://www.instagram.com/snys1123/" target="_blank">Instagram</a>
+      </div>
+      <div class="mail">
+        <span>CONTACT</span>
+        <a href="mailto:snys1123@gmail.com">snys1123@gmail.com</a>
+      </div>
+    </div>
+    <script>
+      $(function(){
+          $('.api-open').on('click', function(e) {
+              e.preventDefault()
+
+              console.log('open start');
+              var def = instance.api().open()
+
+              def.done(function(){
+                  console.log('open done');
+              })
+          })
+          $('.api-close').on('click', function(e) {
+              e.preventDefault()
+
+              console.log('close start');
+              var def = instance.api().close()
+
+              def.done(function(){
+                  console.log('close done');
+              })
+          })
+          $('.api-prev').on('click', function(e) {
+              e.preventDefault()
+
+              console.log('prev start');
+              var def = instance.api().prev()
+
+              def.done(function(){
+                  console.log('prev done');
+              })
+          })
+          $('.api-next').on('click', function(e) {
+              e.preventDefault()
+
+              console.log('next start');
+              var def = instance.api().next()
+
+              def.done(function(){
+                  console.log('next done');
+              })
+          })
+
+          $('.api-cover').on('click', function(e) {
+              e.preventDefault()
+
+              console.log('cover mode start')
+              instance.api().set('imageSize', 'cover')
+              var def = instance.api().place()
+
+              def.done(function(){
+                  console.log('cover mode done')
+              })
+          })
+
+          $('.api-contain').on('click', function(e) {
+              e.preventDefault()
+
+              console.log('contain mode start')
+              instance.api().set('imageSize', 'contain')
+              var def = instance.api().place()
+
+              def.done(function(){
+                  console.log('contain mode done')
+              })
+          })
+      });
+  </script>
+  <script type="text/javascript" src="js/script.js"></script>
+  </body>
+</html>
