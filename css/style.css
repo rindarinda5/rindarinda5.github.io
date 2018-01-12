@@ -166,7 +166,7 @@ header .menu ul {
 }
 
 .main-contents .history p span {
-  margin-right: 16px;
+  margin-right: 14px;
   font-size: 1.3rem;
 }
 
@@ -325,5 +325,5 @@ footer small {
   font-family: arial narrow, sans-serif;
   font-size: 1.1rem;
   letter-spacing: 0.08em;
-  color: #CCCCCC;
+  color: #DDDDDD;
 }
