@@ -264,7 +264,7 @@ header .menu ul {
 
   .menu li a {
     display: inline-block;
-    font-size: 18px;
+    font-size: 16px;
     font-family: arial, sans-serif;
     letter-spacing: 0.18em;
     color: #fff;
@@ -325,5 +325,5 @@ footer small {
   font-family: arial narrow, sans-serif;
   font-size: 1.1rem;
   letter-spacing: 0.08em;
-  color: #DDDDDD;
+  color: #D4D4D4;
 }
