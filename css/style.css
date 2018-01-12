@@ -156,7 +156,7 @@ header .menu ul {
 }
 
 .main-contents .history {
-  margin-top: 42px;
+  margin-top: 32px;
 }
 
 .main-contents .history p {
@@ -176,7 +176,7 @@ header .menu ul {
 
 .contact {
   width: 1280px;
-  margin: 42px auto;
+  margin: 52px auto 32px;
   padding: 0 104px;
   font-size: 1.2rem;
   font-family: arial narrow, sans-serif;
